@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- <div id="vivod">
+        {{ message }}
+        {{ number }}
+        <input type="button" value="randomize" v-on:click="randomize">
+        <br>
+        text from input = {{ changing }}
+        <br>
+        <input type="text" v-model="changing">
+        <br>
+    </div>
+    <div id="bad">
+        <input style="float:left" type="button" value="покажи" onclick="badd()">
+        <span v-if="seen">
+            <div style="float: left; background-color: black; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: yellow; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: green; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: pink; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: brown; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: red; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: gray; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: seagreen; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: skyblue; width: 100px; height:100px"></div>
+            <div style="float: left; background-color: wheat; width: 100px; height:100px"></div>
+        </span>
+    </div>
+
+    <div id="menu">
+
+        <nav v-bind:class="yey" v-on:click.prevent>
+            <a href="#" class="bed" v-on:click="ye('bed')">bed</a>
+            <a href="#" class="evil" v-on:click="ye('evil')">evil</a>
+            <a href="#" class="good" v-on:click="ye('good')">good</a>
+        </nav>
+
+
+        <p> {{yey}} </p>
+
+
+    </div>
+    <div id="marko">
+        <input type="text" v-model="god">
+        <p>{{god}}</p>
+    </div> -->
+
+    <form id="order" v-cloak>
+        <h1>Услуги</h1>
+        <ul>
+            <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active': service.active}">
+                {{service.name}} <span>{{service.price | currency}}</span>
+            </li>
+        </ul>
+        <div class="total">
+            Итого: <span>{{total() | currency}}</span>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
