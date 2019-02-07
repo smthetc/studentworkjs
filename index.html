@@ -56,7 +56,7 @@
         <p>{{god}}</p>
     </div> -->
 
-    <form id="order" v-cloak>
+    <!-- <form id="order" v-cloak>
         <h1>Услуги</h1>
         <ul>
             <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active': service.active}">
@@ -66,7 +66,20 @@
         <div class="total">
             Итого: <span>{{total() | currency}}</span>
         </div>
-    </form>
+    </form> -->
+    <div id="gray">
+        <p>
+            <input type="text" v-model="newNumber" />
+            <button v-on:click="filter()">Добавить</button>
+        </p>
+        <ul>
+            <li v-for="(number, index) in numbers">
+                <p>{{ number }} <button v-on:click="numbers.splice(index, 1)">Удалить</button></p>
+            </li>
+        </ul>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 

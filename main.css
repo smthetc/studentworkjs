@@ -8,7 +8,7 @@ li{ list-style: none; }
     background-color: skyblue;
 } */
 
-@import url(https://fonts.googleapis.com/css?family=Cookie);
+/* @import url(https://fonts.googleapis.com/css?family=Cookie);
 
 [v-cloak] {
   display: none;
@@ -42,7 +42,7 @@ section, footer, header, aside, nav{
 	Форма заказа
 --------------------------*/
 
-form{
+/* form{
 	background-color: #61a1bc;
 	border-radius: 2px;
 	box-shadow: 0 1px 1px #ccc;
@@ -96,4 +96,5 @@ div.total{
 
 div.total span{
 	float:right;
-}
+} */ 
+li {float: left; list-style: none;}

@@ -76,56 +76,89 @@
 //     }
 //  })
 
-Vue.filter('currency', function (value) {
-    return '₽' + value.toFixed(2);
-});
+// Vue.filter('currency', function (value) {
+//     return '₽' + value.toFixed(2);
+// });
 
-var demo = new Vue({
-    el: '#order',
+// var demo = new Vue({
+//     el: '#order',
+//     data: {
+//         services: [
+//             {
+//                 name: 'Помидоры',
+//                 price: 300,
+//                 active: false
+//             }, {
+//                 name: 'Яблоки',
+//                 price: 400,
+//                 active: false
+//             }, {
+//                 name: 'Огурцы',
+//                 price: 250,
+//                 active: false
+//             }, {
+//                 name: 'Баклажаны',
+//                 price: 220,
+//                 active: false
+//             }, {
+//                 name: 'Бананы',
+//                 price: 220,
+//                 active: false
+//             }, {
+//                 name: 'Гранаты',
+//                 price: 220,
+//                 active: false
+//             }
+//         ]
+//     },
+//     methods: {
+//         toggleActive: function (s) {
+//             s.active = !s.active;
+//         },
+//         total: function () {
+
+//             var total = 0;
+
+//             this.services.forEach(function (s) {
+//                 if (s.active) {
+//                     total += s.price;
+//                 }
+//             });
+//             return total;
+//         }
+
+//     }
+// });
+var app = new Vue({
+    el: '#gray',
     data: {
-        services: [
-            {
-                name: 'Помидоры',
-                price: 300,
-                active: false
-            }, {
-                name: 'Яблоки',
-                price: 400,
-                active: false
-            }, {
-                name: 'Огурцы',
-                price: 250,
-                active: false
-            }, {
-                name: 'Баклажаны',
-                price: 220,
-                active: false
-            }, {
-                name: 'Бананы',
-                price: 220,
-                active: false
-            }, {
-                name: 'Гранаты',
-                price: 220,
-                active: false
-            }
-        ]
+        newNumber: '',
+        numbers: ['11', '21', '36', '44', '52', '63', '72', '85', '91']
     },
     methods: {
-        toggleActive: function (s) {
-            s.active = !s.active;
-        },
-        total: function () {
+        filter: function () {
+            if (this.numbers == this.newNumber){true != true;}
+            // console.log(this.numbers);
+            // for (i = 0; i < this.numbers.length; i++) {
+            //     console.log(this.numbers[i]);
 
-            var total = 0;
-
-            this.services.forEach(function (s) {
-                if (s.active) {
-                    total += s.price;
-                }
-            });
-            return total;
+            // }
+            // if (this.numbers == this.newNumber) {
+            //     console.log(this.newNumber);
+            //     console.log(this.numbers);
+            //     console.log("true");
+            // }
+            // else {
+            //     console.log("false");
+            //     console.log(this.newNumber);
+            //     console.log(this.numbers);
+            // }
+            // console.log(this.numbers[i]);
+            // if (this.numbers == this.newNumber) {
+            //     this.numbers.push(this.newNumber);
+            //     console.log(this.newNumber);
+            //     console.log(this.numbers);
+            // }
         }
-
     }
 });
