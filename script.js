@@ -133,32 +133,19 @@ var app = new Vue({
     el: '#gray',
     data: {
         newNumber: '',
-        numbers: ['11', '21', '36', '44', '52', '63', '72', '85', '91']
+        numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     },
     methods: {
         filter: function () {
-            if (this.numbers == this.newNumber){true != true;}
-            // console.log(this.numbers);
-            // for (i = 0; i < this.numbers.length; i++) {
-            //     console.log(this.numbers[i]);
-
-            // }
-            // if (this.numbers == this.newNumber) {
-            //     console.log(this.newNumber);
-            //     console.log(this.numbers);
-            //     console.log("true");
-            // }
-            // else {
-            //     console.log("false");
-            //     console.log(this.newNumber);
-            //     console.log(this.numbers);
-            // }
-            // console.log(this.numbers[i]);
-            // if (this.numbers == this.newNumber) {
-            //     this.numbers.push(this.newNumber);
-            //     console.log(this.newNumber);
-            //     console.log(this.numbers);
-            // }
+            for (i = 0; i < this.numbers.length; i++) {
+                if (this.numbers.indexOf(this.newNumber) == -1) {
+                    this.numbers.push(this.newNumber);
+                    break;
+                }
+                else {
+                    break;
+                }
+            }
         }
     }
 });
