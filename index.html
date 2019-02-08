@@ -11,6 +11,7 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- helo word -->
 
     <!-- <div id="vivod">
         {{ message }}
@@ -67,7 +68,7 @@
             Итого: <span>{{total() | currency}}</span>
         </div>
     </form> -->
-    <div id="gray">
+    <!-- <div id="gray">
         <p>
             <input type="text" v-model="newNumber" />
             <button v-on:click="filter()">Добавить</button>
@@ -77,8 +78,25 @@
                 <p>{{ number }} <button v-on:click="numbers.splice(index, 1)">Удалить</button></p>
             </li>
         </ul>
-    </div>
-
+    </div> -->
+    <div id="app">
+        <label>Логин</label>
+        <input type="text" v-model="login" placeholder="Введите логин"  /><br>
+        <label>Пароль</label>
+        <input type="password" v-model="password" placeholder="Введите пароль" /><br>
+        <label>Возраст</label>
+        <input type="number" v-model="age" min="18" placeholder="Введите возраст" /><br>
+        <label>Дата регистрации</label><br>
+        <input type="date" v-model="date" placeholder="Введите дату"  />
+        <br>
+        <div>
+            <h3>Введенная информация</h3>
+            <p>Логин: {{fucout()}}</p>
+            <p>Пароль: {{password}}</p>
+            <p>Возраст: {{age}}</p>
+            <p>Дата регистрации: {{date}}</p>
+            <button v-on:click="fucout()"></button>
+        </div>
 
     <script src="script.js"></script>
 </body>

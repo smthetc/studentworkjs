@@ -129,23 +129,52 @@
 
 //     }
 // });
+// var app = new Vue({
+//     el: '#gray',
+//     data: {
+//         newNumber: '',
+//         numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+//     },
+//     methods: {
+//         filter: function () {
+//             for (i = 0; i < this.numbers.length; i++) {
+//                 if (this.numbers.indexOf(this.newNumber) == -1) {
+//                     this.numbers.push(this.newNumber);
+//                     break;
+//                 }
+//                 else {
+//                     break;
+//                 }
+//             }
+//         },
+//         filter2: function() {
+//             var lohic;
+//             for (i = 0; i < this.numbers.length; i++){}
+//                 if (this.numbers == this.newNumber){
+//                 console.log(this.numbers);
+//                  {
+//                     console.log(this.numbers[i]);
+//         }
+
+//     }
+// });
 var app = new Vue({
-    el: '#gray',
+    el: '#app',
     data: {
-        newNumber: '',
-        numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+        login:'',
+        password:'',
+        date: '',
+        age: ''
     },
     methods: {
-        filter: function () {
-            for (i = 0; i < this.numbers.length; i++) {
-                if (this.numbers.indexOf(this.newNumber) == -1) {
-                    this.numbers.push(this.newNumber);
-                    break;
-                }
-                else {
-                    break;
-                }
-            }
+        fucout: function(){
+            var mail = /^(?!.*@.*@.*$)(?!.*@.*\-\-.*\..*$)(?!.*@.*\-\..*$)(?!.*@.*\-$)(.*@.+(\..{1,11})?)$/;
+            var log = /(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)/;
+            var age = 
+            if(this.login == mail)
+            return this.login;
+            else
+            console.log("!true");
         }
     }
 });
